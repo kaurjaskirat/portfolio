@@ -1,0 +1,265 @@
+header,body{
+    background-color: rgb(41, 39, 37);
+    display: grid;
+    margin-left: -30%;
+    margin-top: 5%;
+    height: 100%;
+    place-items: center;
+    /* margin-top: -5%; */
+}
+.header h3{
+    color:  rgb(231, 218, 227);
+    font-size: 30px;
+    margin-bottom: 15%;
+    margin-left: 10%;
+    text-decoration: underline;
+}.header p{
+    color:  rgb(218, 228, 67);
+    margin-left:51%;
+    margin-top: -22%;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.skills-bar{
+    width: 400px;
+    background-color: rgb(211, 177, 203);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    padding: 20px 30px;
+}
+.skills-bar .bar{
+    margin: 10px 0;
+}
+.skills-bar .bar:first-child{
+    margin-top: 0px;
+}
+.skills-bar .bar .info span{
+    font-size: x-large;
+    font-weight: bold;
+}
+.skills-bar .bar .progress-line{
+    height: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    position: relative;
+    width: 100%;
+    background: rgb(230, 222, 230);
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.bar .progress-line span{
+height: 100%;
+position: absolute;
+transform: scaleX(0);
+animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform-origin: left;
+border-radius: 10px;
+width: 80%;
+background: rgb(4, 3, 4);
+}
+
+
+
+.skills-bar .bar .info{
+    margin-bottom: 5px;
+}
+.bar .progress-line span::before{
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    right: 0;
+    top: -10px;
+    border: 10px solid transparent;
+    border-right-width:0px; 
+    border-bottom-width:0px; 
+    border-top-color: black;
+    
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2{
+    100%{
+        opacity: 1;
+    }
+}
+.bar .progress-line span::after{
+    position: absolute;
+    /* content: "0%"; */
+    font-size: 20px;
+    top: -30px;
+    background: black;
+    color: rgb(224, 243, 79) ;
+    border-radius: 20%;
+    right: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line.html span::after{
+    content: "95%";
+}
+.progress-line.css span::after{
+    content: "85%";
+}
+.progress-line.js span::after{
+    content: "50%";
+}
+.progress-line.python span::after{
+    content: "60%";
+}.progress-line.node span::after{
+    content: "40%";
+}
+
+
+.progress-line.html span{
+    width: 95%;
+}
+.progress-line.css span{
+    width: 85%;
+}
+.progress-line.js span{
+    width: 50%;
+}
+.progress-line.python span{
+    width: 60%;
+}.progress-line.node span{
+    width: 40%;
+}
+.header1{
+    position: fixed;
+    top:0;
+    LEFT: 0;
+    z-index: 1;
+    width:15%;
+     height: 100%; 
+    background-color: #30373b;
+        display: flex;}
+        .navbar li a{
+            text-decoration: none;
+            display:inline-block;
+            padding: 40%;
+            color: black;
+            width: 80%;
+            font-weight: 600;
+            display: flex;
+        }
+        .navbar li{
+            text-decoration: none;
+        }
+        .navbar li{
+            display:block;
+            /* width: 30%; */
+        }
+        .navbar ul li a{
+            font-size: 150%;
+            margin-left: -40%;
+        }
+        .navbar ul li a:hover{
+            height: 5%;
+            width: 80%;
+            font-size: 200%;
+        }.navbar  li a.active{
+            color:  rgb(192, 206, 42);
+        }
+   .header3 h3{
+    margin-left: 150%;
+    margin-top: -115%;
+   }
+   .header3 p{
+    margin-left: 175%;
+   }
+   .header3 .container .box1{
+    /* color: aliceblue; */
+    /* justify-content: center; */
+    margin-left:120% ;
+   }
+   .header3 .box1 {
+    margin-top: 20%;
+    background-color: #30373b;
+    border-radius: 50%;
+    width: 50%;
+    height: 80px;
+   }
+   .header3 .container .box2{
+    color: aliceblue;
+    margin-left:120% ;
+   }
+
+
+   .header3 .box2 {
+    /* margin-left:50% ; */
+    background-color: #30373b;
+    border-radius: 50%;
+    width: 50%;
+    height: 80px;
+    margin-top: 10%;
+    /* height: 750%; */
+   }
+
+   .header3 .container .box3{
+    color: aliceblue;
+    margin-top: -45%;
+    margin-left:180% ;
+   }
+
+
+   .header3 .box3 {
+    /* margin-left:50% ; */
+    margin-top: 40%;
+    background-color: #30373b;
+    border-radius: 50%;
+    width: 50%;
+
+    height: 80px;
+    margin-top:-75%;
+    /* height: 750%; */
+   }
+   .header3 .container .box4{
+    color: aliceblue;
+    margin-left:180% ;
+   }
+
+
+   .header3 .box4 {
+    /* margin-left:50% ; */
+    background-color: #30373b;
+    border-radius: 50%;
+    width: 50%;
+
+    height: 80px;
+    margin-top:10%;
+    /* height: 750%; */
+   }
+   /* .header3 .container span{
+    margin-top:580%;
+    position: relative;
+   } */
+   .header3 .box1 span{
+    justify-content: center;
+    font-size: -10%;
+    padding-top: 50%;
+    color: rgb(234, 165, 207);
+    font-size: xx-large;
+    margin-left: 20%;
+    margin-top:80%;
+   }
+   .header3 .box2 span{
+    color: rgb(234, 165, 207);
+    font-size: xx-large;
+    margin-left: 20%;
+    margin-top:80%;
+   }
+   .header3 .box3 span{
+    color: rgb(234, 165, 207);
+    font-size: xx-large;
+    margin-left: 20%;
+    margin-top:80%;
+   }
+   .header3 .box4 span{
+    color: rgb(234, 165, 207);
+    font-size: xx-large;
+    margin-left: 20%;
+    margin-top:80%;
+   }
